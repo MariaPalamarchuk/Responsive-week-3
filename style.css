@@ -65,9 +65,13 @@ p {
 }
 
 .homepage-link {
-  color: var(--primary-color);
   text-align: center;
   display: block;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  margin: 10px 150px 10px 150px;
+  padding: 5px;
 }
 
 .about-paragraphs {
@@ -109,4 +113,21 @@ p {
   height: auto;
   overflow: hidden;
   margin: 10px;
+}
+@media (max-width: 768px) {
+  #images {
+    display: none;
+  }
+  .email-link {
+    font-size: 20px;
+  }
+  #h2 {
+    margin-top: 60px;
+  }
+  .paragraph {
+    font-size: 13px;
+  }
+  .homepage-link {
+    margin: auto;
+  }
 }
